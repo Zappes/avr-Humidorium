@@ -1,6 +1,8 @@
 /*
- * Controller code for a device that reads analog sensor values and sleeps
- * while it isn't used. Check the README at Github for more information.
+ * Controller code for a device that monitory the humidoty of a cigar storage
+ * box. Check the README at Github for more information.
+ *
+ * (I might actually document this at some point in time.)
  *
  * Written by Gregor Ottmann, https://github.com/Zappes
  */
@@ -110,9 +112,6 @@ char* status_symbol(uint8_t status) {
 	}
 }
 
-/*
- * This one doesn't do much. It just calls the two other functions.
- */
 int main(void)
 {
 	led_init();
